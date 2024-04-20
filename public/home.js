@@ -3,7 +3,7 @@ let expenseList = [];
 function checkIfUserLoggedIn() {
     const token = localStorage.getItem('token');
     if (!token) {
-        window.location.href = 'http://localhost:4000/signup.html';
+        window.location.href = 'https://cstp1206final-myqb.onrender.com';
     }
 }
 
@@ -141,7 +141,7 @@ function logout(event) {
     event.preventDefault();
     localStorage.removeItem('token');
     localStorage.removeItem('userId')
-    window.location.href = 'http://localhost:4000';
+    window.location.href = 'https://cstp1206final-myqb.onrender.com';
 }
 
 function categoryPicture(category){

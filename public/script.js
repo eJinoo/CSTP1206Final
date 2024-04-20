@@ -57,7 +57,7 @@ async function loginUser(event) {
                 localStorage.setItem('userId', loggedInUserJSON.data.id);
                 localStorage.setItem('token', loggedInUserJSON.data.token);
                 console.log(loggedInUserJSON.message);
-                window.location.href = 'http://localhost:4000/home.html';
+                window.location.href = 'https://cstp1206final-myqb.onrender.com/home.html';
             }
         } catch(error) {
             console.log('There was an err client side!')
